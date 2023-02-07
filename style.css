@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Gulzar&display=swap');
+
+#container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    background-color: hsl(217, 54%, 11%);
+}
+#container #content {
+    position: relative;
+    width: 500px;
+    height: 750px;
+    background-color: hsl(216, 50%, 16%);
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* place-items: center; 
+    */
+    border-radius: 19px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+#container #content #img img {
+    width: 416px;
+    height: 350px;
+    padding: 40px 40px 40px 40px ;
+    border-radius: 13%;
+    cursor: pointer;
+}
+#container #content #img #overly {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 416px;
+    height: 350px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: hsla(178, 100%, 50%, 0.416);
+    display: flex;
+    justify-content: center;
+    place-items: center ;
+    border-radius: 19px;
+}
+#container #content #img:hover #overly {
+    opacity: .75 ;
+}
+#container #content h1 {
+    margin-left: 40px;
+    margin-top: -10px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Gulzar', serif;
+    cursor: pointer;
+}
+#container #content h1:hover{
+    color: hsl(178, 100%, 50%);
+}
+#container #content #first {
+    margin-left: 40px;
+    margin-top: -24px;
+    margin-right: 40px;
+    color: hsl(215, 51%, 70%);
+    font-size: 24px;
+    font-weight: 300;
+    font-family: 'Gulzar', serif;
+    line-height: 29px;
+}
+
+
+#container #content #teter-clock {
+    position: relative;
+    gap: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    place-items: start;
+    text-align: start;
+    
+}
+#container #content #teter-clock #teter {
+    display: flex;
+    margin-left: 40px;
+    /* justify-content: start; */
+    /* place-items: start; */
+    /* text-align: start; */
+
+}
+#container #content #teter-clock #teter p {
+    color: hsl(178, 100%, 50%);
+    font-family: 'Gulzar', serif;
+    font-size: 20px;
+    margin-top: -14px;
+}
+#container #content #teter-clock #clock {
+    display: flex;
+    margin-left: 40px;
+}
+#container #content #teter-clock #clock p {
+    color: hsl(215, 51%, 70%);
+    font-family: 'Gulzar', serif;
+    font-size: 20px;
+    margin-top: -14px;
+}
+#container #content #line{
+    width: 90%;
+    height: 1px;
+    background-color: hsla(215, 52%, 70%, 0.384);
+    margin-left: 23px
+}
+#container #content #avatar {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    gap: 20px;
+
+}
+#container #content #avatar img {
+    border-radius: 50%;
+    border: 2px solid white;
+    width:50px;
+    height:50px;
+    
+}
+#container #content #avatar p {
+    font-family: 'Gulzar', serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 6px;
+    color: hsl(215, 32%, 27%);
+    cursor: pointer;
+}
+#container #content #avatar p span {
+    color:white ;
+}
+#container #content #avatar p span:hover{
+    color:hsl(178, 100%, 50%) ;
+}
+@media  only screen  and (max-width:600px) {
+    #container {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        place-items: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100%;
+        background-color: hsl(217, 54%, 11%);
+    }
+    #container #content {
+        position: relative;
+        width: 470px;
+        height: 850px;
+        background-color: hsl(216, 50%, 16%);
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* place-items: center; 
+        */
+        border-radius: 19px;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    }
+    #container #content #img img {
+        width: 100%px;
+        height: 40%px;
+        /* padding: 40px 40px 40px 40px ; */
+        margin-left: -12px;
+        border-radius: 13%;
+        cursor: pointer;
+    }
+    #container #content #img #overly {
+        position: absolute;
+        top: 40px;
+        left: 30px;
+        width: 416px;
+        height: 350px;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: hsla(178, 100%, 50%, 0.416);
+        display: flex;
+        justify-content: center;
+        place-items: center ;
+        border-radius: 19px;
+    }
+    
+    #container #content #img:hover #overly {
+        opacity: .75 ;
+    }
+    #container #content h1 {
+        margin-left: 40px;
+        margin-top: -10px;
+        font-weight: 600;
+        color: white;
+        font-family: 'Gulzar', serif;
+        cursor: pointer;
+    }
+    #container #content h1:hover{
+        color: hsl(178, 100%, 50%);
+    }
+    #container #content #first {
+        margin-left: 40px;
+        margin-top: -24px;
+        margin-right: 40px;
+        color: hsl(215, 51%, 70%);
+        font-size: 24px;
+        font-weight: 300;
+        font-family: 'Gulzar', serif;
+        line-height: 29px;
+    }
+    
+    
+    #container #content #teter-clock {
+        position: relative;
+        gap: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        place-items: start;
+        text-align: start;
+        
+    }
+    #container #content #teter-clock #teter {
+        display: flex;
+        margin-left: 40px;
+        /* justify-content: start; */
+        /* place-items: start; */
+        /* text-align: start; */
+    
+    }
+    #container #content #teter-clock #teter p {
+        color: hsl(178, 100%, 50%);
+        font-family: 'Gulzar', serif;
+        font-size: 20px;
+        margin-top: -14px;
+    }
+    #container #content #teter-clock #clock {
+        display: flex;
+        margin-left: 40px;
+    }
+    #container #content #teter-clock #clock p {
+        color: hsl(215, 51%, 70%);
+        font-family: 'Gulzar', serif;
+        font-size: 20px;
+        margin-top: -14px;
+    }
+    #container #content #line{
+        width: 90%;
+        height: 1px;
+        background-color: hsla(215, 52%, 70%, 0.384);
+        margin-left: 23px
+    }
+    #container #content #avatar {
+        margin-left: 40px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 15px;
+        gap: 20px;
+    
+    }
+    #container #content #avatar img {
+        border-radius: 50%;
+        border: 2px solid white;
+        
+    }
+    #container #content #avatar p {
+        font-family: 'Gulzar', serif;
+        font-weight: 400;
+        font-size: 20px;
+        margin-top: 6px;
+        color: hsl(215, 32%, 27%);
+        cursor: pointer;
+    }
+    #container #content #avatar p span {
+        color:white ;
+    }
+    #container #content #avatar p span:hover{
+        color:hsl(178, 100%, 50%) ;
+    }
+}
